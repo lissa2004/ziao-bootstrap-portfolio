@@ -9,7 +9,7 @@
     <meta name="generator" content="Hugo 0.118.2">
     <title>Kamo M | Portfolio</title>
 
-  
+   <link rel="shortcut icon" href="./assets/K initial.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -18,26 +18,25 @@
   </head>
   <body class="bg-light">
    
-<div class="banner-wrap vh-100 vw-75 text-white">
-  <div class="overlay"></div>
-  <header class=" px-3 p-5 text-white">
-    <div>
-    <h3 class="float-md-start text-center">Portfolio</h3>
-    <nav class="nav nav-masthead justify-content-center float-md-end">
-      <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-      <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
-      <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-    </nav>
-    </div>
+
+
+    <header class=" px-2 p-2 text-white fixed-top">
+      <h3 class="float-md-start text-center">Portfolio</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
+        <a class="nav-link fw-bold py-1 px-0" href="#About Me">About Me</a>
+        <a class="nav-link fw-bold py-1 px-0" href="#Projects">Projects</a>
+        <a class="nav-link fw-bold py-1 px-0" href="#Let's Connect">Contact</a>
+      </nav>
     </header>
-
-  <main class="d-flex flex-column align-items-center justify-content-center h-75 text-center">
+<div class="banner-wrap vh-100 vw-75 d-flex flex-column align-items-center justify-content-center text-white">
+  <div class="overlay"></div>
+  <main class="text-center">
     <h1 class="display-1">I'm Kamogelo Mathikge </h1>
-    <p class="lead">Fullstack developer Student.Assistant Software developer. </p>
+    <span id="typed" class="lead"></span>
   </main>
-
 </div>
-<section>
+<section id="About Me">
       <div class="container p-5">
        <div class="card">
         <div class="card-body">
@@ -68,7 +67,7 @@
       </div>
       </div>
 </section>
-<section>
+<section id="Projects">
 <div class="container p-3"> 
 <h1 class="text-center"><mark>Projects</mark></h1>
   <div class="row">
@@ -108,7 +107,7 @@
   </div>
   </div>
 </section>
-<section>
+<section id="Let's Connect">
   <div class="container p-5">
     <div class="card p-3">
     <div class="card-body px-5 text-center">
@@ -140,5 +139,26 @@
   </div>
   </div>
 </section>
+   <footer class="bg-dark text-center text-white">
+   <div class="container p-3">
+      <p> Developed by Kamo M, Using Bootstrap, For Ziao Course</p>
+   </div>
+   </footer>
+
+ <script>
+  window.addEventListener("scroll", () => {
+   const header= document.querySelector("header")
+   header.classList.toggle("scrolling",window.scrollY >0)
+  })
+ </script>
+ <span id="element"></span>
+ <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ <script>
+    var typed = new Typed('#typed', {
+    strings:['Fullstack developer Student.','Assistant Software developer.'],
+    loop:true,
+    typeSpeed: 75,
+  });
+</script>
 </body>
 </html>

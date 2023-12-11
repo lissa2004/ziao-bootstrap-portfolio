@@ -5,15 +5,6 @@
   
 }
 
-
-
-/*
- * Base structure
- */
-
-/*
- * Header
- */
  .banner-wrap {
   background-image: url(./assets/banner-img.jpg);
   background-repeat: no-repeat;
@@ -31,6 +22,12 @@
   position: absolute;
   opacity: 50%;
   top:0
+}
+
+.scrolling{
+  background: black;
+  opacity: 90%;
+  transition:all 0.5s;
 }
 
 
